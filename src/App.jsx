@@ -1,9 +1,45 @@
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom"
 import Navbar from "./Components/Navbar/Navbar"
+import Home from "./Pages/Home"
+import Tours from "./Pages/Tours"
+import Gallery from "./Pages/Gallery"
+import Contact from "./Pages/Contact"
 
 const App = () => {
+
+  const Layout = () => {
+    return(
+      <>
+        <Navbar/>
+        <Outlet/>
+      </>
+    )
+  }
+
+  const router = createBrowserRouter([
+    {
+      path:"/",
+      element:<Layout/>,
+      children:[
+        {
+          path: "/", element: <Home/>
+        },
+        {
+          path: "/tours", element:<Tours/>
+        },
+        {
+          path: "/gallery", element:<Gallery/>
+        },
+        {
+          path: "/contact", element: <Contact/>
+        }
+      ]
+    }
+  ])
+
   return (
     <>
-      <Navbar/>
+      <RouterProvider router={router}/>
     </>
   )
 }
