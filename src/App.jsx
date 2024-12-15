@@ -4,6 +4,7 @@ import Home from "./Pages/Home"
 import Tours from "./Pages/Tours"
 import Gallery from "./Pages/Gallery"
 import Contact from "./Pages/Contact"
+import About from "./Pages/About"
 
 const App = () => {
 
@@ -26,6 +27,9 @@ const App = () => {
         },
         {
           path: "/tours", element:<Tours/>
+        },
+        {
+          path: "/about", element: <About/>
         },
         {
           path: "/gallery", element:<Gallery/>
