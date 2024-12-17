@@ -21,7 +21,7 @@ const Hero = () => {
     <div className="slider-container -mt-12 overflow-hidden">
       <Slider {...settings}>
         <div className="">
-          <div style={{backgroundImage: `url(${banner1})`}} className="h-[750px] lg:h-[900px] relative bg-cover bg-center">
+          <div style={{backgroundImage: `url(${banner1})`}} className="h-[650px] lg:h-[900px] relative bg-cover bg-center">
             <div className="absolute inset-0 bg-black opacity-60"></div>
             <div className="relative max-w-7xl mx-auto">
                 <div className="flex h-[750px] justify-center items-center lg:pt-0 pt-20">
