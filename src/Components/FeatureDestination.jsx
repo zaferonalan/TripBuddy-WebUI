@@ -10,14 +10,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Clock, Star } from 'lucide-react';
+import  './Css/reactSlick.css'; //react Slider'dan gelen özel sınıf olduğu için o sınıfa müdahale ettik.
 
 const FeatureDestination = () => {
 
-    const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
+    const SlickArrowLeft = ({ ...props }) => (
         <img src={next} alt="prevArrow" {...props}/>
     )
 
-    const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
+    const SlickArrowRight = ({...props }) => (
         <img src={back} alt="prevArrow" {...props}/>
     )
     
@@ -27,8 +28,8 @@ const FeatureDestination = () => {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 3,
-        nextArrow: <SlickArrowLeft/>,
-        prevArrow: <SlickArrowRight/>,
+        nextArrow: <SlickArrowLeft className="absolute z-10 w-8 h-12"/>,
+        prevArrow: <SlickArrowRight className="absolute z-10 w-8 h-8"/>,
         responsive: [
             {
                 breakpoint: 1024,
