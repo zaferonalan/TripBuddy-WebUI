@@ -1,3 +1,4 @@
+import Banner from "../Components/Banner"
 import FeatureDestination from "../Components/FeatureDestination"
 import Features from "../Components/Features"
 import GalleryComp from "../Components/GalleryComp"
@@ -10,6 +11,7 @@ const Home = () => {
       <FeatureDestination/>
       <Features/>
       <GalleryComp/>
+      <Banner/>
     </>
   )
 }
