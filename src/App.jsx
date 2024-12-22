@@ -5,6 +5,7 @@ import Tours from "./Pages/Tours"
 import Gallery from "./Pages/Gallery"
 import Contact from "./Pages/Contact"
 import About from "./Pages/About"
+import Footer from "./Components/Footer"
 
 const App = () => {
 
@@ -13,6 +14,7 @@ const App = () => {
       <>
         <Navbar/>
         <Outlet/>
+        <Footer/>
       </>
     )
   }
