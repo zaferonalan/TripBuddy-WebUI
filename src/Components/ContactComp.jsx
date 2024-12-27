@@ -1,6 +1,6 @@
 import contactImg from '../assets/ContactImg.jpg';
 
-const Contact = () => {
+const ContactComp = () => {
   return (
     <div className='flex flex-col max-w-7xl mx-auto md:flex-row lg:h-screen items-center'>
       {/* image section */}
@@ -50,4 +50,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default ContactComp
