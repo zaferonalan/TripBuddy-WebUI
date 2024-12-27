@@ -7,6 +7,8 @@ import Contact from "./Pages/Contact"
 import About from "./Pages/About"
 import Footer from "./Components/Footer"
 
+import ScrollToTop from "react-scroll-to-top";
+
 const App = () => {
 
   const Layout = () => {
@@ -46,6 +48,7 @@ const App = () => {
   return (
     <>
       <RouterProvider router={router}/>
+      <ScrollToTop smooth color="white" style={{backgroundColor: '#EF4444', display: 'flex', alignItems: 'center', justifyContent:'center'}}/>
     </>
   )
 }
